@@ -470,28 +470,18 @@ const DataStructuresArtifact = () => {
                   
                   <div>
                     <h5 className="font-semibold text-green-700 mb-3">💻 Codul Python:</h5>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '1rem',
-                          fontSize: '0.875rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`# List - secvență mutabilă, ordonată
-meniu = ["🍕 Pizza", "🍔 Burger"]
-
-# Operații comune
-meniu.append("🌮 Tacos")  # Adaugă la sfârșitul
-meniu.insert(0, "🥗 Salată")  # Inserează la poziția 0
-primul = meniu[0]  # Accesare după index
-meniu.remove("🍔 Burger")  # Șterge primul găsit
-
-# Avantaje: flexibilitate, ordine, accesare rapidă după index
-# Perfect pentru: comenzi, playlist-uri, istoricul navegării`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                      <span className="text-gray-500"># List - secvență mutabilă, ordonată</span><br/>
+                      meniu = [<span className="text-yellow-300">"🍕 Pizza"</span>, <span className="text-yellow-300">"🍔 Burger"</span>]<br/><br/>
+                      
+                      <span className="text-gray-500"># Operații comune</span><br/>
+                      meniu.append(<span className="text-yellow-300">"🌮 Tacos"</span>)&nbsp;&nbsp;<span className="text-gray-500"># Adaugă la sfârșitul</span><br/>
+                      meniu.insert(<span className="text-purple-400">0</span>, <span className="text-yellow-300">"🥗 Salată"</span>)&nbsp;<span className="text-gray-500"># Inserează la poziția 0</span><br/>
+                      primul = meniu[<span className="text-purple-400">0</span>]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-500"># Accesare după index</span><br/>
+                      meniu.remove(<span className="text-yellow-300">"🍔 Burger"</span>)&nbsp;&nbsp;<span className="text-gray-500"># Șterge primul găsit</span><br/><br/>
+                      
+                      <span className="text-gray-500"># Avantaje: flexibilitate, ordine, accesare rapidă după index</span><br/>
+                      <span className="text-gray-500"># Perfect pentru: comenzi, playlist-uri, istoricul navegării</span>
                     </div>
                   </div>
                 </div>
@@ -543,31 +533,21 @@ meniu.remove("🍔 Burger")  # Șterge primul găsit
                   
                   <div>
                     <h5 className="font-semibold text-purple-700 mb-3">💻 Codul Python:</h5>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '1rem',
-                          fontSize: '0.875rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`# Set - colecție de valori unice
-restaurante = {"Pizza Express", "Burger King"}
-
-# Operații comune
-restaurante.add("KFC")  # Adaugă (nu duplică!)
-restaurante.add("KFC")  # Nu se va adăuga din nou
-restaurante.remove("Pizza Express")
-numar = len(restaurante)  # Numărul de elemente
-
-# Verificare rapidă existență
-if "McDonald's" in restaurante:
-    print("Găsit!")
-
-# Perfect pentru: filtrare duplicate, verificări rapide`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                      <span className="text-gray-500"># Set - colecție de valori unice</span><br/>
+                      restaurante = {[<span className="text-yellow-300">"Pizza Express"</span>, <span className="text-yellow-300">"Burger King"</span>]}<br/><br/>
+                      
+                      <span className="text-gray-500"># Operații comune</span><br/>
+                      restaurante.add(<span className="text-yellow-300">"KFC"</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-500"># Adaugă (nu duplică!)</span><br/>
+                      restaurante.add(<span className="text-yellow-300">"KFC"</span>)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-500"># Nu se va adăuga din nou</span><br/>
+                      restaurante.remove(<span className="text-yellow-300">"Pizza Express"</span>)<br/>
+                      numar = len(restaurante)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-gray-500"># Numărul de elemente</span><br/><br/>
+                      
+                      <span className="text-gray-500"># Verificare rapidă existență</span><br/>
+                      <span className="text-blue-400">if</span> <span className="text-yellow-300">"McDonald's"</span> <span className="text-blue-400">in</span> restaurante:<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;print(<span className="text-yellow-300">"Găsit!"</span>)<br/><br/>
+                      
+                      <span className="text-gray-500"># Perfect pentru: filtrare duplicate, verificări rapide</span>
                     </div>
                   </div>
                 </div>
@@ -623,32 +603,22 @@ if "McDonald's" in restaurante:
                   
                   <div>
                     <h5 className="font-semibold text-orange-700 mb-3">💻 Codul Python:</h5>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '1rem',
-                          fontSize: '0.875rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`# Dict - mapări cheie → valoare
-stats = {
-    "Pizza Express": {"rating": 4.5, "timp": 25},
-    "Burger King": {"rating": 4.2, "timp": 15}
-}
-
-# Accesare rapidă după cheie
-rating = stats["Pizza Express"]["rating"]
-stats["KFC"] = {"rating": 4.0}  # Adaugă nou
-
-# Iterare prin toate
-for restaurant, date in stats.items():
-    print(f"{restaurant}: {date['rating']}")
-
-# Perfect pentru: cache, configurări, baze de date simple`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                      <span className="text-gray-500"># Dict - mapări cheie → valoare</span><br/>
+                      stats = {'{'}<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">"Pizza Express"</span>: {'{'}<span className="text-yellow-300">"rating"</span>: <span className="text-purple-400">4.5</span>, <span className="text-yellow-300">"timp"</span>: <span className="text-purple-400">25</span>{'}'},<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-yellow-300">"Burger King"</span>: {'{'}<span className="text-yellow-300">"rating"</span>: <span className="text-purple-400">4.2</span>, <span className="text-yellow-300">"timp"</span>: <span className="text-purple-400">15</span>{'}'}<br/>
+                      {'}'}<br/><br/>
+                      
+                      <span className="text-gray-500"># Accesare rapidă după cheie</span><br/>
+                      rating = stats[<span className="text-yellow-300">"Pizza Express"</span>][<span className="text-yellow-300">"rating"</span>]<br/>
+                      stats[<span className="text-yellow-300">"KFC"</span>] = {'{'}<span className="text-yellow-300">"rating"</span>: <span className="text-purple-400">4.0</span>{'}'}  <span className="text-gray-500"># Adaugă nou</span><br/><br/>
+                      
+                      <span className="text-gray-500"># Iterare prin toate</span><br/>
+                      <span className="text-blue-400">for</span> restaurant, date <span className="text-blue-400">in</span> stats.items():<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;print(<span className="text-yellow-300">f"</span>{'{'}restaurant{'}'}: {'{'}date['rating']{'}'}<span className="text-yellow-300">"</span>)<br/><br/>
+                      
+                      <span className="text-gray-500"># Perfect pentru: cache, configurări, baze de date simple</span>
                     </div>
                   </div>
                 </div>
@@ -691,35 +661,25 @@ for restaurant, date in stats.items():
                   
                   <div>
                     <h5 className="font-semibold text-blue-700 mb-3">💻 Codul Python:</h5>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '1rem',
-                          fontSize: '0.875rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`# Tuple - secvență imutabilă
-coordonate = (44.4268, 26.1025, "București", "România")
-
-# Accesare după index
-lat = coordonate[0]
-lng = coordonate[1]
-
-# Unpacking (destructuring)
-lat, lng, oras, tara = coordonate
-
-# Încearcă să modifici (va da eroare!):
-# coordonate[0] = 45.0  # TypeError!
-
-# Folosire în funcții
-def calculeaza_distanta(punct1, punct2):
-    return math.sqrt((punct1[0] - punct2[0])**2)
-
-# Perfect pentru: coordonate, configurări fixe, returnări multiple`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                      <span className="text-gray-500"># Tuple - secvență imutabilă</span><br/>
+                      coordonate = (<span className="text-purple-400">44.4268</span>, <span className="text-purple-400">26.1025</span>, <span className="text-yellow-300">"București"</span>, <span className="text-yellow-300">"România"</span>)<br/><br/>
+                      
+                      <span className="text-gray-500"># Accesare după index</span><br/>
+                      lat = coordonate[<span className="text-purple-400">0</span>]<br/>
+                      lng = coordonate[<span className="text-purple-400">1</span>]<br/><br/>
+                      
+                      <span className="text-gray-500"># Unpacking (destructuring)</span><br/>
+                      lat, lng, oras, tara = coordonate<br/><br/>
+                      
+                      <span className="text-gray-500"># Încearcă să modifici (va da eroare!):</span><br/>
+                      <span className="text-red-400"># coordonate[0] = 45.0  # TypeError!</span><br/><br/>
+                      
+                      <span className="text-gray-500"># Folosire în funcții</span><br/>
+                      <span className="text-blue-400">def</span> <span className="text-cyan-400">calculeaza_distanta</span>(punct1, punct2):<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-400">return</span> math.sqrt((punct1[<span className="text-purple-400">0</span>] - punct2[<span className="text-purple-400">0</span>])**<span className="text-purple-400">2</span>)<br/><br/>
+                      
+                      <span className="text-gray-500"># Perfect pentru: coordonate, configurări fixe, returnări multiple</span>
                     </div>
                   </div>
                 </div>
@@ -789,7 +749,7 @@ def calculeaza_distanta(punct1, punct2):
                     )}
                   </Button>
                   
-                  <div className="space-y-2 max-h-64 overflow-y-auto">
+                  <div className="space-y-4 max-h-[32rem] overflow-y-auto">
                     {sortedOrders.map((order, index) => (
                       <div
                         key={order.id}
@@ -823,71 +783,88 @@ def calculeaza_distanta(punct1, punct2):
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-gray-700">💻 Algoritmi de Sortare</h4>
                 <div className="space-y-4">
-                  <div className="rounded-lg overflow-hidden border border-gray-700">
-                    <SyntaxHighlighter
-                      language="python"
-                      style={vscDarkPlus}
-                      customStyle={{
-                        margin: 0,
+                  <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                    <div className="text-yellow-300 mb-2"># Bubble Sort - Algoritm educațional O(n²)</div>
+                      <SyntaxHighlighter 
+                        language="python" 
+                        style={vscDarkPlus}
+                        showLineNumbers
+                        wrapLongLines    
+                        customStyle={{
+                        borderRadius: '0.75rem',
                         padding: '1rem',
-                        fontSize: '0.875rem',
-                        borderRadius: '0.5rem',
-                      }}
-                      showLineNumbers={false}
-                    >{`# Bubble Sort - Algoritm educațional O(n²)
-def bubble_sort(comenzi, key):
+                        margin: 0,
+                        background: 'transparent', // use parent bg
+                        overflowX: 'auto',
+                        fontSize: '0.9rem',
+                        }}
+                        lineNumberStyle={{ color: '#6b7280', paddingRight: '1em' }}>
+{`def bubble_sort(comenzi, key):
     n = len(comenzi)
     for i in range(n):
         for j in range(0, n-i-1):
             if comenzi[j][key] > comenzi[j+1][key]:
                 comenzi[j], comenzi[j+1] = comenzi[j+1], comenzi[j]
-    return comenzi`}</SyntaxHighlighter>
+    return comenzi`}
+                    </SyntaxHighlighter>
                   </div>
-
-                  <div className="rounded-lg overflow-hidden border border-gray-700">
-                    <SyntaxHighlighter
-                      language="python"
+                  
+                  <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                    <div className="text-yellow-300 mb-2"># Quick Sort - Algoritm eficient O(n log n)</div>
+                      <SyntaxHighlighter 
+                      language="python" 
                       style={vscDarkPlus}
+                      showLineNumbers
+                      wrapLongLines    
                       customStyle={{
-                        margin: 0,
-                        padding: '1rem',
-                        fontSize: '0.875rem',
-                        borderRadius: '0.5rem',
+                      borderRadius: '0.75rem',
+                      padding: '1rem',
+                      margin: 0,
+                      background: 'transparent', // use parent bg
+                      overflowX: 'auto',
+                      fontSize: '0.9rem',
                       }}
-                      showLineNumbers={false}
-                    >{`# Quick Sort - Algoritm eficient O(n log n)
-def quick_sort(comenzi, key):
-    if len(comenzi) <= 1:
-        return comenzi
+                      lineNumberStyle={{ color: '#6b7280', paddingRight: '1em' }} // Tailwind gray-500
+                      >
+{`def quick_sort(comenzi, key):
+if len(comenzi) <= 1:
+    return comenzi
 
-    pivot = comenzi[len(comenzi) // 2]
-    left = [x for x in comenzi if x[key] < pivot[key]]
-    middle = [x for x in comenzi if x[key] == pivot[key]]
-    right = [x for x in comenzi if x[key] > pivot[key]]
+pivot = comenzi[len(comenzi) // 2]
+left = [x for x in comenzi if x[key] < pivot[key]]
+middle = [x for x in comenzi if x[key] == pivot[key]]
+right = [x for x in comenzi if x[key] > pivot[key]]
 
-    return quick_sort(left, key) + middle + quick_sort(right, key)`}</SyntaxHighlighter>
+return quick_sort(left, key) + middle + quick_sort(right, key)`}
+                    </SyntaxHighlighter>
                   </div>
-
-                  <div className="rounded-lg overflow-hidden border border-gray-700">
-                    <SyntaxHighlighter
-                      language="python"
+                  
+                  <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                    <div className="text-yellow-300 mb-2"># Python Built-in - TimSort O(n log n), optimizat</div>
+                      <SyntaxHighlighter 
+                      language="python" 
                       style={vscDarkPlus}
+                      showLineNumbers
+                      wrapLongLines    
                       customStyle={{
-                        margin: 0,
-                        padding: '1rem',
-                        fontSize: '0.875rem',
-                        borderRadius: '0.5rem',
+                      borderRadius: '0.75rem',
+                      padding: '1rem',
+                      margin: 0,
+                      background: 'transparent', // use parent bg
+                      overflowX: 'auto',
+                      fontSize: '0.9rem',
                       }}
-                      showLineNumbers={false}
-                    >{`# Python Built-in - TimSort O(n log n), optimizat
-# Sortare simplă
+                      lineNumberStyle={{ color: '#6b7280', paddingRight: '1em' }} // Tailwind gray-500
+                      >
+{`# Sortare simplă
 comenzi.sort(key=lambda x: x['${sortBy}'])
 
 # Sortare cu mai multe criterii
 comenzi.sort(key=lambda x: (x['priority'], x['time']))
 
 # Sortare descrescătoare
-comenzi.sort(key=lambda x: x['${sortBy}'], reverse=True)`}</SyntaxHighlighter>
+comenzi.sort(key=lambda x: x['${sortBy}'], reverse=True)`}
+                    </SyntaxHighlighter>
                   </div>
                 </div>
                 
@@ -985,90 +962,66 @@ comenzi.sort(key=lambda x: x['${sortBy}'], reverse=True)`}</SyntaxHighlighter>
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-gray-700">💻 Algoritmi de Căutare</h4>
                 <div className="space-y-4">
-                  <div className="rounded-lg overflow-hidden border border-gray-700">
-                    <SyntaxHighlighter
-                      language="python"
-                      style={vscDarkPlus}
-                      customStyle={{
-                        margin: 0,
-                        padding: '1rem',
-                        fontSize: '0.875rem',
-                        borderRadius: '0.5rem',
-                      }}
-                      showLineNumbers={false}
-                    >{`# Linear Search - Căutare secvențială O(n)
-def linear_search(comenzi, termen):
-    rezultate = []
-    pasi = 0
+                  <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                    <div className="text-yellow-300 mb-2"># Linear Search - Căutare secvențială O(n)</div>
+                    <pre>
+        {`def linear_search(comenzi, termen):
+            rezultate = []
+            pasi = 0
+            
+            for comanda in comenzi:  # Verific fiecare element
+                pasi += 1
+                if termen.lower() in comanda['restaurant'].lower():
+                    rezultate.append(comanda)
+            
+            return rezultate, pasi
 
-    for comanda in comenzi:  # Verific fiecare element
-        pasi += 1
-        if termen.lower() in comanda['restaurant'].lower():
-            rezultate.append(comanda)
-
-    return rezultate, pasi
-
-# Timp: O(n) - Trebuie să verific toată lista
-# Avantaj: Funcționează pe orice listă
-# Dezavantaj: Lent pentru liste mari`}</SyntaxHighlighter>
+        # Timp: O(n) - Trebuie să verific toată lista
+        # Avantaj: Funcționează pe orice listă
+        # Dezavantaj: Lent pentru liste mari`}
+                    </pre>
                   </div>
+                  
+                  <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                    <div className="text-yellow-300 mb-2"># Binary Search - Căutare binară O(log n)</div>
+                    <pre>
+            {`def binary_search(comenzi_sortate, termen):
+                left, right = 0, len(comenzi_sortate) - 1
+                pasi = 0
+                
+                while left <= right:
+                    pasi += 1
+                    mid = (left + right) // 2
+                    
+                    if termen in comenzi_sortate[mid]['restaurant']:
+                        return comenzi_sortate[mid], pasi
+                    elif termen < comenzi_sortate[mid]['restaurant']:
+                        right = mid - 1
+                    else:
+                        left = mid + 1
+                
+                return None, pasi
 
-                  <div className="rounded-lg overflow-hidden border border-gray-700">
-                    <SyntaxHighlighter
-                      language="python"
-                      style={vscDarkPlus}
-                      customStyle={{
-                        margin: 0,
-                        padding: '1rem',
-                        fontSize: '0.875rem',
-                        borderRadius: '0.5rem',
-                      }}
-                      showLineNumbers={false}
-                    >{`# Binary Search - Căutare binară O(log n)
-def binary_search(comenzi_sortate, termen):
-    left, right = 0, len(comenzi_sortate) - 1
-    pasi = 0
-
-    while left <= right:
-        pasi += 1
-        mid = (left + right) // 2
-
-        if termen in comenzi_sortate[mid]['restaurant']:
-            return comenzi_sortate[mid], pasi
-        elif termen < comenzi_sortate[mid]['restaurant']:
-            right = mid - 1
-        else:
-            left = mid + 1
-
-    return None, pasi
-
-# Timp: O(log n) - Înjumătățesc zona de căutare
-# Avantaj: Foarte rapid pentru liste mari
-# Dezavantaj: Lista TREBUIE să fie sortată`}</SyntaxHighlighter>
+            # Timp: O(log n) - Înjumătățesc zona de căutare
+            # Avantaj: Foarte rapid pentru liste mari
+            # Dezavantaj: Lista TREBUIE să fie sortată`}
+                    </pre>
                   </div>
+                  
+                  <div className="bg-gray-900 text-green-400 p-4 rounded-lg font-mono text-sm">
+                    <div className="text-yellow-300 mb-2"># Căutări optimizate în Python</div>
+                    <pre>
+          {`# Folosind built-in functions
+          rezultate = [c for c in comenzi if termen in c['restaurant']]
 
-                  <div className="rounded-lg overflow-hidden border border-gray-700">
-                    <SyntaxHighlighter
-                      language="python"
-                      style={vscDarkPlus}
-                      customStyle={{
-                        margin: 0,
-                        padding: '1rem',
-                        fontSize: '0.875rem',
-                        borderRadius: '0.5rem',
-                      }}
-                      showLineNumbers={false}
-                    >{`# Căutări optimizate în Python
-# Folosind built-in functions
-rezultate = [c for c in comenzi if termen in c['restaurant']]
+          # Căutare cu bisect (pentru liste sortate)
+          import bisect
+          index = bisect.bisect_left(comenzi_sortate, termen)
 
-# Căutare cu bisect (pentru liste sortate)
-import bisect
-index = bisect.bisect_left(comenzi_sortate, termen)
-
-# Set lookup O(1) - pentru verificări de existență
-restaurante_set = set(c['restaurant'] for c in comenzi)
-existe = termen in restaurante_set  # Instant!`}</SyntaxHighlighter>
+          # Set lookup O(1) - pentru verificări de existență
+          restaurante_set = set(c['restaurant'] for c in comenzi)
+          existe = termen in restaurante_set  # Instant!`}
+                    </pre>
                   </div>
                 </div>
                 
@@ -1168,90 +1121,40 @@ existe = termen in restaurante_set  # Instant!`}</SyntaxHighlighter>
                   <div className="bg-gradient-to-r from-green-100 to-blue-100 p-4 rounded-lg">
                     <h5 className="font-bold text-green-800 mb-2">🏆 O(1) - Constant</h5>
                     <p className="text-sm mb-2">Acces la dict/set, append la listă</p>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '0.5rem',
-                          fontSize: '0.75rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`dict_lookup = mydict[key]  # Mereu rapid`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-2 rounded font-mono text-xs">
+                      dict_lookup = mydict[key]  # Mereu rapid
                     </div>
                   </div>
-
+                  
                   <div className="bg-gradient-to-r from-blue-100 to-purple-100 p-4 rounded-lg">
                     <h5 className="font-bold text-blue-800 mb-2">📊 O(log n) - Logaritmic</h5>
                     <p className="text-sm mb-2">Binary search, operații pe arbori</p>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '0.5rem',
-                          fontSize: '0.75rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`binary_search(sorted_list, target)`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-2 rounded font-mono text-xs">
+                      binary_search(sorted_list, target)
                     </div>
                   </div>
-
+                  
                   <div className="bg-gradient-to-r from-yellow-100 to-orange-100 p-4 rounded-lg">
                     <h5 className="font-bold text-orange-800 mb-2">⚡ O(n) - Linear</h5>
                     <p className="text-sm mb-2">Linear search, iterare prin listă</p>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '0.5rem',
-                          fontSize: '0.75rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`for item in my_list: process(item)`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-2 rounded font-mono text-xs">
+                      for item in my_list: process(item)
                     </div>
                   </div>
-
+                  
                   <div className="bg-gradient-to-r from-orange-100 to-red-100 p-4 rounded-lg">
                     <h5 className="font-bold text-orange-800 mb-2">🚀 O(n log n) - Linearitmic</h5>
                     <p className="text-sm mb-2">Quick sort, merge sort, Tim sort</p>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '0.5rem',
-                          fontSize: '0.75rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`my_list.sort()  # TimSort în Python`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-2 rounded font-mono text-xs">
+                      my_list.sort()  # TimSort în Python
                     </div>
                   </div>
-
+                  
                   <div className="bg-gradient-to-r from-red-100 to-pink-100 p-4 rounded-lg">
                     <h5 className="font-bold text-red-800 mb-2">🐌 O(n²) - Pătratic</h5>
                     <p className="text-sm mb-2">Bubble sort, nested loops</p>
-                    <div className="rounded-lg overflow-hidden border border-gray-700">
-                      <SyntaxHighlighter
-                        language="python"
-                        style={vscDarkPlus}
-                        customStyle={{
-                          margin: 0,
-                          padding: '0.5rem',
-                          fontSize: '0.75rem',
-                          borderRadius: '0.5rem',
-                        }}
-                        showLineNumbers={false}
-                      >{`for i in range(n): for j in range(n): ...`}</SyntaxHighlighter>
+                    <div className="bg-gray-900 text-green-400 p-2 rounded font-mono text-xs">
+                      for i in range(n): for j in range(n): ...
                     </div>
                   </div>
                 </div>
