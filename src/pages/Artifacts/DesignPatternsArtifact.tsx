@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Play, Pause, RotateCcw, Crown, Factory, Building2, Zap, Settings, Pizza, Car, Book, FileText } from 'lucide-react';
+import { CodeBlockR } from '@/components/CodeBlockR';
 
 interface LogEntry {
   id: string;
@@ -464,7 +465,7 @@ const DesignPatternsArtifact = () => {
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-gray-700">🐍 Codul Python</h4>
                 <div className="bg-gray-900 rounded-xl p-6 text-sm">
-                  <pre className="text-green-400">
+                  <CodeBlockR>
 {`class Logger:
     """
     Singleton Pattern - o singură instanță în toată aplicația
@@ -532,7 +533,7 @@ print(len(logger3.get_logs()))  # 3
 # - Conexiuni la baza de date
 # - Cache-uri globale
 # - System logs`}
-                  </pre>
+                  </CodeBlockR>
                 </div>
                 
                 <div className="mt-4 bg-blue-50 rounded-lg p-4">
@@ -646,7 +647,7 @@ print(len(logger3.get_logs()))  # 3
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-gray-700">🐍 Codul Python</h4>
                 <div className="bg-gray-900 rounded-xl p-6 text-sm">
-                  <pre className="text-green-400">
+                  <CodeBlockR>
 {`# Clasele de animale (toate au aceeași interfață)
 class Animal:
     def __init__(self, nume):
@@ -723,7 +724,7 @@ def creeaza_ferma():
 # ✅ Ușor de extins (adaugi noi animale)  
 # ✅ Codul client nu știe de clase specifice
 # ✅ Respectă principiul "Open/Closed"`}
-                  </pre>
+                  </CodeBlockR>
                 </div>
                 
                 <div className="mt-4 bg-green-50 rounded-lg p-4">
@@ -916,7 +917,7 @@ def creeaza_ferma():
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-gray-700">🐍 Codul Python</h4>
                 <div className="bg-gray-900 rounded-xl p-6 text-sm">
-                  <pre className="text-green-400">
+                  <CodeBlockR>
 {`class Pizza:
     """Produsul final complex"""
     def __init__(self):
@@ -1012,7 +1013,7 @@ pizza2.add_topping("Șuncă")
 result = pizza2.build()
 
 print(result)`}
-                  </pre>
+                  </CodeBlockR>
                 </div>
                 
                 <div className="mt-4 bg-orange-50 rounded-lg p-4">
@@ -1232,7 +1233,7 @@ print(result)`}
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-gray-700">🐍 Codul Python</h4>
                 <div className="bg-gray-900 rounded-xl p-6 text-sm">
-                  <pre className="text-green-400">
+                  <CodeBlockR>
 {`# SISTEM COMPLET cu toate pattern-urile!
 
 # 1. SINGLETON - Logger Global
@@ -1373,7 +1374,7 @@ def main():
 
 if __name__ == "__main__":
     main()`}
-                  </pre>
+                  </CodeBlockR>
                 </div>
                 
                 <div className="mt-4 bg-purple-50 rounded-lg p-4">
